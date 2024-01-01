@@ -6,7 +6,7 @@ import db from './config/database.config';
  
 // test database connection
 db.sync().then(() =>{
-  console.log('connected to database successfully');
+  console.log('connected to database was  successfully');
 });
 
 
