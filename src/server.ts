@@ -30,7 +30,6 @@ app.use(express.json()); // body parser
 }); 
 
 
-
  app.get('/read',async (req:Request,res:Response)=>{
      try{
        const records = await TodoInstance.findAll({});
@@ -44,7 +43,7 @@ app.use(express.json()); // body parser
 });
 
 
-app.get('/paginate',async (req:Request,res:Response)=>{
+app.get('/pagination',async (req:Request,res:Response)=>{
     try{
     // pagination
             //const limit = req.query?.limit  as number | undefined;
